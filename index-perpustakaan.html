@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistem Reservasi Restoran</title>
+
+    <link rel="stylesheet" href="style-restoran.css">
+</head>
+<body>
+
+<header>
+    <h1>🍽 Sistem Reservasi Restoran</h1>
+    <p>Reservasi meja dengan mudah</p>
+</header>
+
+<div class="container">
+
+    <div class="form-box">
+
+        <h2>Form Reservasi</h2>
+
+        <input type="text" id="nama" placeholder="Nama Pelanggan">
+
+        <input type="date" id="tanggal">
+
+        <input type="time" id="jam">
+
+        <input type="number" id="orang" placeholder="Jumlah Orang">
+
+        <select id="meja">
+            <option value="">Pilih Meja</option>
+            <option>Meja 1</option>
+            <option>Meja 2</option>
+            <option>Meja 3</option>
+            <option>Meja VIP</option>
+        </select>
+
+        <button onclick="pesan()">Reservasi</button>
+
+    </div>
+
+    <h2>Daftar Reservasi</h2>
+
+    <table>
+
+        <thead>
+
+            <tr>
+                <th>Nama</th>
+                <th>Tanggal</th>
+                <th>Jam</th>
+                <th>Orang</th>
+                <th>Meja</th>
+            </tr>
+
+        </thead>
+
+        <tbody id="hasil">
+
+        </tbody>
+
+    </table>
+
+</div>
+
+<script src="script-restoran.js"></script>
+
+</body>
+</html>
